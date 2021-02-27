@@ -1,0 +1,35 @@
+.nav-link:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 61%, rgb(46, 46, 46) 100%);
+}
+footer {
+    background-color: white;
+}
+
+/* Error pages */
+.error main {
+    text-shadow: 2px 0 black, 0 2px black, -2px 0 black, 0 -2px black;
+}
+.error-image {
+    clip-path: circle();
+    width: 100%;
+}
+@media (min-width:500px) {
+    body.error {
+        background-image: url("/ebert/src/images/error.jpg");
+        background-repeat: cover;
+    }
+    .error main {
+        color: white;
+        font-size: 150%;
+    }
+    .error .error-image {
+        display:none;
+    }
+}
